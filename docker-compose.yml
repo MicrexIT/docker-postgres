@@ -14,9 +14,3 @@ services:
       - data:/var/lib/postgresql/data
 volumes:
   data:
-
-
-
-
-# USEFUL LINKS
-# https://medium.com/freestoneinfotech/simplifying-docker-compose-operations-using-makefile-26d451456d63
