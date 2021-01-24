@@ -1,0 +1,22 @@
+version: '3'
+
+services:
+  postgres:
+    image: "postgres:12"
+    container_name: "postgres"
+    environment:
+      - POSTGRES_USER=user
+      - POSTGRES_PASSWORD=password
+      - POSTGRES_DB=blend
+    ports:
+      - "5432:5432"
+    volumes:
+      - data:/var/lib/postgresql/data
+volumes:
+  data:
+
+
+
+
+# USEFUL LINKS
+# https://medium.com/freestoneinfotech/simplifying-docker-compose-operations-using-makefile-26d451456d63
